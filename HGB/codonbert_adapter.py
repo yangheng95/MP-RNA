@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
 # file: codonbert_adapter.py
 # time: 11:53 08/02/2024
-# author: YANG, HENG <hy345@exeter.ac.uk> (杨恒)
-# github: https://github.com/yangheng95
-# huggingface: https://huggingface.co/yangheng
-# google scholar: https://scholar.google.com/citations?user=NPq5a_0AAAAJ&hl=en
-# Copyright (C) 2019-2023. All Rights Reserved.
 from tokenizers import Tokenizer
 from tokenizers.models import WordLevel
 from tokenizers.pre_tokenizers import Whitespace

@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
 # file: transformer_models.py
 # time: 14:55 20/01/2024
-# author: YANG, HENG <hy345@exeter.ac.uk> (杨恒)
-# github: https://github.com/yangheng95
-# huggingface: https://huggingface.co/yangheng
-# google scholar: https://scholar.google.com/citations?user=NPq5a_0AAAAJ&hl=en
-# Copyright (C) 2019-2023. All Rights Reserved.
 import json
 import os
 import random
@@ -77,11 +72,6 @@ class AutoModelForSequenceClassification(torch.nn.Module):
 # -*- coding: utf-8 -*-
 # file: transformer_models.py
 # time: 14:55 20/01/2024
-# author: YANG, HENG <hy345@exeter.ac.uk> (杨恒)
-# github: https://github.com/yangheng95
-# huggingface: https://huggingface.co/yangheng
-# google scholar: https://scholar.google.com/citations?user=NPq5a_0AAAAJ&hl=en
-# Copyright (C) 2019-2023. All Rights Reserved.
 from transformers.models.bert.modeling_bert import BertPooler
 
 import torch
