@@ -10,6 +10,7 @@ from omnigenome.src.dataset.omnigenome_dataset import (
 from omnigenome.src.metric.classification_metric import ClassificationMetric
 from omnigenome.src.model.classiifcation.model import (
     OmniGenomeModelForTokenClassification,
+    OmniGenomeModelForTokenClassificationWith2DStructure,
 )
 from omnigenome import OmniGenomeTokenizer, ModelHub
 from omnigenome.src.trainer.trainer import Trainer
@@ -20,12 +21,18 @@ model_name_or_path = "anonymous8/OmniGenome-52M"
 
 SN_tokenizer = AutoTokenizer.from_pretrained(model_name_or_path)
 
-
-model = OmniGenomeModelForTokenClassification(
+# The OmniGenome+ in the paper
+model = OmniGenomeModelForTokenClassificationWith2DStructure(
     model_name_or_path,
     tokenizer=SN_tokenizer,
     label2id=label2id
 )
+# The OmniGenome in the paper
+# model = OmniGenomeModelForTokenClassification(
+#     model_name_or_path,
+#     tokenizer=SN_tokenizer,
+#     label2id=label2id
+# )
 
 epochs = 10
 learning_rate = 2e-5
