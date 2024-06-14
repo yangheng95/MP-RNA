@@ -6,7 +6,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=str, default="rgb")
     parser.add_argument(
-        "--gfm", type=str, default="anonymous8/OmniGenome-52M"
+        "--gfm", type=str, default="anonymous8/MP-RNA-186M"
     )
     parser.add_argument("--batch_size", type=int, default=4)
     parser.add_argument("--overwrite", type=bool, default=False)

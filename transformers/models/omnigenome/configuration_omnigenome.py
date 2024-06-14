@@ -25,8 +25,8 @@ logger = logging.get_logger(__name__)
 
 # TODO Update this
 OmniGenome_PRETRAINED_CONFIG_ARCHIVE_MAP = {
-    "anonymous8/OmniGenome-52M": "https://huggingface.co/anonymous8/OmniGenome-52M/resolve/main/config.json",
-    "anonymous8/OmniGenome-186M": "https://huggingface.co/anonymous8/OmniGenome-186M/resolve/main/config.json",
+    "anonymous8/MP-RNA-186M": "https://huggingface.co/anonymous8/MP-RNA-186M/resolve/main/config.json",
+    "anonymous8/MP-RNA-186M": "https://huggingface.co/anonymous8/MP-RNA-186M/resolve/main/config.json",
     # See all OmniGenome models at https://huggingface.co/models?filter=OmniGenome
 }
 
@@ -36,7 +36,7 @@ class OmniGenomeConfig(PretrainedConfig):
     This is the configuration class to store the configuration of a [`OmniGenomeModel`]. It is used to instantiate a OmniGenome model
     according to the specified arguments, defining the model architecture. Instantiating a configuration with the
     defaults will yield a similar configuration to that of the OmniGenome
-    [anonymous8/OmniGenome-52M](https://huggingface.co/anonymous8/OmniGenome-52M) architecture.
+    [anonymous8/MP-RNA-186M](https://huggingface.co/anonymous8/MP-RNA-186M) architecture.
 
     Configuration objects inherit from [`PretrainedConfig`] and can be used to control the model outputs. Read the
     documentation from [`PretrainedConfig`] for more information.
@@ -92,7 +92,7 @@ class OmniGenomeConfig(PretrainedConfig):
     ```python
     # >>> from transformers import OmniGenomeModel, OmniGenomeConfig
     #
-    # >>> # Initializing a OmniGenome anonymous8/OmniGenome-52M style configuration >>> configuration = OmniGenomeConfig()
+    # >>> # Initializing a OmniGenome anonymous8/MP-RNA-186M style configuration >>> configuration = OmniGenomeConfig()
     #
     # >>> # Initializing a model from the configuration >>> model = OmniGenomeModel(configuration)
     #

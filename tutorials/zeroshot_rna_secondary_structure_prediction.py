@@ -16,12 +16,12 @@ if __name__ == "__main__":
 
     
     
-    ssp_model = OmniGenomeForTokenClassification.from_pretrained("anonymous8/OmniGenome-186M")
+    ssp_model = OmniGenomeForTokenClassification.from_pretrained("anonymous8/MP-RNA-186M")
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     ssp_model.to(device)
 
-    tokenizer = AutoTokenizer.from_pretrained("anonymous8/OmniGenome-186M")
+    tokenizer = AutoTokenizer.from_pretrained("anonymous8/MP-RNA-186M")
     inputs = tokenizer(sequence, return_tensors="pt", padding="max_length", truncation=True).to(device)
     with torch.no_grad():
         outputs = ssp_model(**inputs)

@@ -17,7 +17,7 @@ from omnigenome.src.trainer.trainer import Trainer
 
 label2id = {"(": 0, ")": 1, ".": 2}
 
-model_name_or_path = "anonymous8/OmniGenome-52M"
+model_name_or_path = "anonymous8/MP-RNA-186M"
 
 SN_tokenizer = AutoTokenizer.from_pretrained(model_name_or_path)
 
@@ -79,12 +79,12 @@ trainer = Trainer(
 )
 
 metrics = trainer.train()
-model.save("OmniGenome-52M", overwrite=True)
-model.load("OmniGenome-52M")
+model.save("MP-RNA-186M", overwrite=True)
+model.load("MP-RNA-186M")
 
 
 
-model = ModelHub.load("OmniGenome-52M")
+model = ModelHub.load("MP-RNA-186M")
 output = model.inference(
     [
         "GCCCGAAUAGCUCAGCCGGUUAGAGCACUUGACUGUUAAUCAGGGGGUCGUUGGUUCGAGUCCAACUUCGGGCGCCA",

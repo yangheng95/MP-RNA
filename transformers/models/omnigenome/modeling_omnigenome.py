@@ -48,11 +48,11 @@ from .configuration_omnigenome import OmniGenomeConfig
 
 logger = logging.get_logger(__name__)
 
-_CHECKPOINT_FOR_DOC = "anonymous8/OmniGenome-52M"
+_CHECKPOINT_FOR_DOC = "anonymous8/MP-RNA-186M"
 _CONFIG_FOR_DOC = "OmniGenomeConfig"
 
 OmniGenome_PRETRAINED_MODEL_ARCHIVE_LIST = [
-    "anonymous8/OmniGenome-52M",
+    "anonymous8/MP-RNA-186M",
 ]
 
 

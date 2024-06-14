@@ -35,7 +35,7 @@ def genetic_algorithm_for_rna_design(structure, **kwargs):
     num_generation = kwargs.get("num_generation", 50)
     puzzle_id = kwargs.get("puzzle_id", 0)
     
-    model = "anonymous8/OmniGenome-52M"
+    model = "anonymous8/MP-RNA-186M"
     device = autocuda.auto_cuda()
     tokenizer = AutoTokenizer.from_pretrained(model)
     model = AutoModelForMaskedLM.from_pretrained(model)
